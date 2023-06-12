@@ -1,7 +1,11 @@
+// mixins
+@import
+  "./utils/mixins";
+
 // componentes
-@import 
+@import
   "./components/new";
-  
+
 body {
   background-color: gray;
   color: #333;
