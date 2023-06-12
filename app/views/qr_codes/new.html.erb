@@ -1,0 +1,15 @@
+<div class="container-mail">
+  <h1 class="container-mail__title">Creacion de codigo QR</h1>
+  <h3 class="container-mail__property">Made with ♥︎ by Juanequex</h3>
+
+  <%= form_with(model: @qr_code, url: qr_codes_path, local: true) do |form| %>
+    <div class="container-mail__field-container">
+      <%= form.label :url, class: "container-mail__field-container__label" %>
+      <%= form.text_field :url, required: true, class: "container-mail__field-container__field" %>
+    </div>
+
+    <div class="container-mail__actions">
+      <%= form.submit "Generate QR Code", class: "container-mail__actions__submit" %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<div class="container-mail">
+  <h1 class="container-mail__title">QR Code</h1>
+
+  <% if @qr_code.url.present? %>
+    El URL es correcto
+  <% else %>
+    <p>El URL no existe</p>
+  <% end %>
+  
+  <div class="buttons-container">
+    <%= link_to "Download QR Code", qr_code_path(@qr_code, format: :png), class: "container-mail__actions__submit" %>
+    <%= link_to "Back to home", [:root], class: "container-mail__actions__submit"  %>
+  </div>
+</div>

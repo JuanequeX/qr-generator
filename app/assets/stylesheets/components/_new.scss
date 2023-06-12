@@ -1,0 +1,86 @@
+.container-mail {
+    height: 80vh;
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  &__title {
+    margin: 0 0 1rem 0;
+  }
+
+  &__property {
+    margin: 0 0 1rem 0;
+  }
+
+  &__field-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__label {
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+
+    &__field {
+      margin-bottom: .5rem;
+      width: 130px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 16px;
+      transition: width 0.4s ease-in-out;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      }
+      &__field:focus {
+        width: 50%;
+      }
+  }
+
+  &__actions {
+
+    &__submit {
+      background-color:white;
+      color: black;
+      border: 2px solid #555555;
+      border-radius: 10px;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    &__submit:hover {
+      background-color: #555555;
+      color: white;
+    }
+  }
+}
+
+.container-mail form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
